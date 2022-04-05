@@ -1,0 +1,103 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+* > {
+    flex-basis: 100%;
+}
+
+body {
+    background-image: url('src/pexels-anni-roenkae-2457317.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+#survey-form {
+    background-color: #b3255483;
+    border: 1px solid #ed93afba;
+    box-shadow: 3px 4px #2c010e21;
+    border-radius: 5px;
+    padding: 1rem 2rem 0 2rem;
+    width: 50%;
+    height: auto;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+input[type=text], input[type=email], input[type=number], select, textarea {
+    margin: 5px 0 12px 0;
+    padding: 5px;
+    width: 100%;
+}
+
+input[type=checkbox] {
+    display: flex;
+    flex-flow: column wrap;
+    align-self: start;
+}
+
+h1 {
+    font-family: 'ltc-broadway-engraved', sans-serif;
+    text-shadow: 3px 2px #3d02137b;
+    color: #2df5f1;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.2em;
+    text-align: center;
+}
+
+label, input[type=checkbox] {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    text-shadow: 2px 2px #1c0109a6;
+    margin-bottom: 5px;
+}
+
+#description {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 1.1em;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    text-shadow: 2px 2px #1c0109a6;
+}
+
+p {
+    color: #ffffff;
+    text-shadow: 2px 2px #1c0109a6;
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.submit-btn {
+    padding: 14px 34px;
+    margin: 3rem 0 4rem 0;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 800px) {
+    #survey-form {
+        width: 100vw;
+        height: 90vh;
+        padding-top: 2.2rem;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 0.8em;
+    }
+}
+
