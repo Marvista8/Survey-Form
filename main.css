@@ -1,5 +1,6 @@
 * {
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
     box-sizing: border-box;
     margin: 0;
 }
@@ -17,9 +18,9 @@ body {
 }
 
 #survey-form {
-    background-color: #b3255483;
-    border: 1px solid #ed93afba;
-    box-shadow: 3px 4px #2c010e21;
+    background-color: #b325546e;
+    border: 1px solid #88012c91;
+    box-shadow: 4px 3px #2c010e21;
     border-radius: 5px;
     padding: 1rem 2rem 0 2rem;
     width: 50%;
@@ -48,8 +49,9 @@ h1 {
     color: #2df5f1;
     font-style: normal;
     font-weight: 400;
-    font-size: 2.2em;
+    font-size: 3em;
     text-align: center;
+    padding-top: 3rem;
 }
 
 label, input[type=checkbox] {
@@ -63,7 +65,7 @@ label, input[type=checkbox] {
 #description {
     color: #ffffff;
     font-weight: 400;
-    font-size: 1.1em;
+    font-size: 1.5em;
     text-align: center;
     padding-top: 5px;
     padding-bottom: 25px;
@@ -72,23 +74,32 @@ label, input[type=checkbox] {
 
 p {
     color: #ffffff;
-    text-shadow: 2px 2px #1c0109a6;
+    text-shadow: 2px 2px #1c0109bc;
     border: none;
     padding-top: 15px;
     padding-bottom: 10px;
 }
 
 .submit-btn {
+    background-color: #430826;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
     padding: 14px 34px;
-    margin: 3rem 0 4rem 0;
-    border-radius: 5px;
+    margin: 4rem 0 4rem 0;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #74003e;
 }
 
 @media screen and (max-width: 800px) {
     #survey-form {
         width: 100vw;
-        height: 90vh;
         padding-top: 2.2rem;
+        margin-top: 2rem;
     }
 }
 
@@ -96,8 +107,8 @@ p {
     h1 {
         font-size: 1.5em;
     }
-    p {
-        font-size: 0.8em;
+    p, #description {
+        font-size: 0.9em;
     }
 }
 
